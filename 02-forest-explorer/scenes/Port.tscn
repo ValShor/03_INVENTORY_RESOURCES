@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bgiofahexliey"]
+
+[ext_resource type="FontFile" uid="uid://lsgihh8w4j00" path="res://assets/ComicoroRu_0.ttf" id="1_db0mq"]
+
+[sub_resource type="Theme" id="Theme_svnoa"]
+default_font = ExtResource("1_db0mq")
+
+[sub_resource type="LabelSettings" id="LabelSettings_svnoa"]
+font_size = 15
+
+[node name="Port" type="Node2D" unique_id=1935973113]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1450392723]
+offset_right = 226.0
+offset_bottom = 130.0
+color = Color(0.13100407, 0.114497274, 0.17832354, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1764479886]
+offset_left = 32.0
+offset_top = 51.0
+offset_right = 205.0
+offset_bottom = 68.0
+theme = SubResource("Theme_svnoa")
+text = "Oppps...somethin' wrong happened"
+label_settings = SubResource("LabelSettings_svnoa")

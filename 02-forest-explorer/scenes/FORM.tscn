@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dmnmfifoilna4"]
+
+[ext_resource type="Script" uid="uid://dv4q0psunbnj6" path="res://scripts/ui_info.gd" id="1_cv4hm"]
+[ext_resource type="FontFile" uid="uid://lsgihh8w4j00" path="res://assets/ComicoroRu_0.ttf" id="1_pr00t"]
+
+[sub_resource type="Theme" id="Theme_lsvt4"]
+default_font = ExtResource("1_pr00t")
+
+[sub_resource type="Theme" id="Theme_svnoa"]
+default_font = ExtResource("1_pr00t")
+
+[node name="Form" type="Control" unique_id=905399202]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_cv4hm")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1274568312]
+layout_mode = 0
+offset_right = 226.0
+offset_bottom = 132.0
+color = Color(0.17332438, 0.1774007, 0.22427827, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=798556536]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 34.0
+offset_right = 219.0
+offset_bottom = 118.0
+theme = SubResource("Theme_lsvt4")
+
+[node name="Name" type="HBoxContainer" parent="VBoxContainer" unique_id=453668369]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Name" unique_id=1121546301]
+layout_mode = 2
+text = "Name:"
+
+[node name="NameTextEdit" type="TextEdit" parent="VBoxContainer/Name" unique_id=454684117]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="NextButton" type="Button" parent="." unique_id=264779380]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 55.0
+offset_right = 156.0
+offset_bottom = 86.0
+theme = SubResource("Theme_svnoa")
+text = "Start Game"
+
+[connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]

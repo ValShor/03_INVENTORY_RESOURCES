@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cv3rux2putobc"]
+
+[ext_resource type="Script" uid="uid://bcq0xbd8e2pb4" path="res://scripts/item.gd" id="1_4gq7n"]
+
+[node name="Item" type="Node2D" unique_id=2039759508 node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_4gq7n")
+sprite = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=129309746]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1489940174]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=963872079]
